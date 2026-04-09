@@ -1,5 +1,7 @@
 # Discussion Analysis Agent Team
 
+**v0.3.0** · [Changelog](CHANGELOG.md)
+
 Analyzes discussion transcripts using a team of AI agents. Produces participant positions, tactics assessment, and violation audit — in the discussion's own language.
 
 ## Prerequisites
@@ -15,8 +17,12 @@ Analyzes discussion transcripts using a team of AI agents. Produces participant 
 ## Usage
 
 1. Drop your discussion file into the `input/` folder — prefer `.txt` or `.md`; avoid `.pdf`, `.html`, or `.rtf`
-2. In Claude Code, type:
-   > Run the discussion analysis pipeline on `<your-filename>`
+2. In Claude Code, run one of:
+   ```
+   /agents synthesizer input/<your-file>
+   /agents synthesizer-ru input/<your-file>
+   ```
+   Use `synthesizer` for auto-detected language output, `synthesizer-ru` for Russian output.
 3. Wait for the agents to finish
 
 ## Results
@@ -32,5 +38,6 @@ Find the output in `output/<your-filename>/`:
 
 ## Notes
 
-- Multiple files in `input/` are processed one at a time, each getting its own output folder
-- All output is written in the dominant language of the discussion
+- Each run processes a single file, writing results to its own output folder
+- `synthesizer` writes output in the discussion's dominant language
+- `synthesizer-ru` always writes output in Russian
