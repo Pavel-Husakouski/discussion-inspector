@@ -3,10 +3,17 @@
 All notable changes to this project will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] — 2026-04-14
+
+### Changed
+- Expanded permissions: added `Agent`, `Bash(mkdir:output/**)`, `Bash(claude:*)` to allow agent invocation and directory creation
+- Fixed agent path in changelog (`.github/agents/` → `.claude/agents/`)
+- Updated README version badge to `v0.4.0`
+
 ## [0.4.0] — 2026-04-14
 
 ### Added
-- Reviewer agents for English and Russian (`.github/agents/Reviewer-en.agent.md`, `Reviewer-ru.agent.md`)
+- Reviewer agents for English and Russian (`.claude/agents/Reviewer-en.agent.md`, `Reviewer-ru.agent.md`)
 
 ### Changed
 - All agents now explicitly document input/output parameters for consistency
