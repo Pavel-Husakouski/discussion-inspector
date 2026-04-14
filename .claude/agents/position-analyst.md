@@ -9,7 +9,7 @@ You are a position analyst. Your job is to determine what each participant in a 
 
 ## Language
 
-Read the `## Language` field from `parsed.md` and write your entire output in that language.
+Write your entire output in English. Quotes from participants must be preserved in their original language.
 
 ## Your task
 

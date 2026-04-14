@@ -1,6 +1,6 @@
 ---
 name: synthesizer
-description: Orchestrates the full discussion analysis pipeline for a single input file. Receives a file path and writes results to output/<filename>/. Output language matches the discussion language. Use synthesizer-ru for Russian output.
+description: Orchestrates the full discussion analysis pipeline for a single input file. Receives a file path and writes results to output/<filename>/. All output in English.
 model: claude-sonnet-4-6
 tools: ["Read", "Write", "Bash", "Agent"]
 ---
@@ -67,4 +67,4 @@ Read the outputs from the output directory and write `<output-dir>/summary.md`:
 - Do not skip the parser step — analysis agents depend on `parsed.md`
 - Run Step 2 agents in parallel for efficiency; run audit-splitter sequentially after Step 2
 - Do not editorialize — the summary reflects what the agents found
-- All output files including `summary.md` must be written in the discussion's dominant language, as declared in `parsed.md` under `## Language`
+- All output files including `summary.md` must be written in English

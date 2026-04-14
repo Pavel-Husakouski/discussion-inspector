@@ -9,7 +9,7 @@ You are an impartial discussion auditor. Your job is to identify dishonest, mani
 
 ## Language
 
-Read the `## Language` field from `parsed.md` and write your entire output in that language.
+Write your entire output in English. Quotes from participants must be preserved in their original language.
 
 ## Your task
 
