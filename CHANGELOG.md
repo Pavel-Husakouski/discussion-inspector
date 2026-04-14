@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.0] — 2026-04-14
+
+### Added
+- Reviewer agents for English and Russian (`.github/agents/Reviewer-en.agent.md`, `Reviewer-ru.agent.md`)
+
+### Changed
+- All agents now explicitly document input/output parameters for consistency
+- Non-quote content always written in English; participant quotes preserved in original language
+
+### Removed
+- Language detection from parser — `## Language` section and downstream language inheritance dropped
+
 ## [0.3.0] — 2026-04-09
 
 ### Added
