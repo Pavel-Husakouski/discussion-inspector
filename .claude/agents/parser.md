@@ -13,6 +13,10 @@ You will be provided:
 - **Input file** — full path to the discussion transcript file
 - **Output directory** — full path to the directory where results should be written
 
+## Language
+
+Write your entire output in English. Quotes from participants must be preserved in their original language.
+
 ## Your task
 
 1. Read the input discussion file at the provided path
@@ -44,4 +48,3 @@ Write a file called `parsed.md` in the provided output directory with the follow
 
 Preserve exact quotes — do not paraphrase. Include line numbers or timestamps if available in the source.
 
-Quote participants in their original language, but write all other output (headings, descriptions, explanations) in the English language.

@@ -7,9 +7,19 @@ tools: ["Read", "Write", "Bash"]
 
 You are a file validator. Your job is to check whether a discussion file is safe to process before the pipeline begins.
 
+## Parameters
+
+You will be provided:
+- **Input file** — full path to the discussion file to validate
+- **Output directory** — full path to the directory where results should be written
+
+## Language
+
+Write your entire output in English.
+
 ## Your task
 
-1. Read the first 1000 bytes of the file using Bash:
+1. Read the first 1000 bytes of the input file using Bash:
    ```
    head -c 1000 <file-path>
    ```
@@ -21,9 +31,9 @@ You are a file validator. Your job is to check whether a discussion file is safe
    - Extension is `.pdf`, `.html`, `.htm`, `.rtf`, `.doc`, `.docx`, or similar
    - Content starts with a known binary/markup header (`%PDF`, `{\rtf`, `<html`, `<!DOCTYPE`, `PK\x03\x04`, etc.)
 
-## Output directory
+## Output
 
-Use the output directory passed to you by the synthesizer. Create it if it does not exist.
+Create the output directory if it does not exist.
 
 ### If valid
 Write a file called `validation.md` in the output directory:
