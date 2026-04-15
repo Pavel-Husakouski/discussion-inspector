@@ -1,6 +1,6 @@
 # Discussion Analysis Agent Team
 
-**v0.5.0** · [Changelog](CHANGELOG.md)
+**v0.6.0** · [Changelog](CHANGELOG.md)
 
 Analyzes discussion transcripts using a team of AI agents. Produces participant positions, tactics assessment, and violation audit — in the discussion's own language.
 
@@ -31,7 +31,8 @@ Find the output in `output/<your-filename>/`:
 
 | File | Contents |
 |---|---|
-| `summary.md` | Overview and key findings |
+| `report.md` | Source, participants, and list of output files |
+| `summary.md` | Topic, direction, character, and central idea |
 | `positions.md` | Each participant's stance and claims |
 | `tactics.md` | Argumentation style and fallacies |
 | `audit-<name>.md` | Violations per offending participant (only created if violations found) |

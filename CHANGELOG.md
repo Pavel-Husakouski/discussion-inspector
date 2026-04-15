@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.0] — 2026-04-15
+
+### Added
+- Summarizer agents (`summarizer`, `summarizer-ru`) — write a brief topic/direction/character/idea summary to `summary.md`
+- Auditor violation types: **Labeling** and **Overgeneralization** (both EN and RU agents)
+
+### Changed
+- Parser output switched from grouped-by-speaker to chronological message format with `[N] Name — timestamp` entries, examples, and strict constraints
+- Synthesizer now runs 4 parallel analysis agents (added summarizer) instead of 3
+- Synthesizer final output renamed from `summary.md` to `report.md` (summary is now produced by the summarizer agent)
+- Validator `PIPELINE_STOP` message says "calling agent" instead of "synthesizer"
+
 ## [0.5.0] — 2026-04-14
 
 ### Changed
