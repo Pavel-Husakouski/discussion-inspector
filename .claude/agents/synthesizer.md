@@ -28,23 +28,24 @@ Delegate to the `parser` agent with:
 Wait for `<output-dir>/parsed.md` to be written before proceeding.
 
 ### Step 2 — Analyze (parallel)
-Once `parsed.md` exists, delegate to all three analysis agents simultaneously, passing the output directory to each:
+Once `parsed.md` exists, delegate to all four analysis agents simultaneously, passing the output directory to each:
+- `summarizer` — writes a brief topic/direction/character/idea summary → `<output-dir>/summary.md`
 - `position-analyst` — maps each participant's stance and claims → `<output-dir>/positions.md`
 - `tactics-analyst` — evaluates argumentation style and fallacies → `<output-dir>/tactics.md`
 - `auditor` — investigates for lies, contradictions, and bad faith → `<output-dir>/audit.md`
 
-Wait for all three to complete.
+Wait for all four to complete.
 
 ### Step 2.5 — Split audit (sequential, after Step 2)
 Delegate to the `audit-splitter` agent with the output directory.
 
 Wait for it to complete before proceeding. It will produce `<output-dir>/audit-<name>.md` per offending participant.
 
-### Step 3 — Compile summary
-Read the outputs from the output directory and write `<output-dir>/summary.md`:
+### Step 3 — Compile report
+Read the outputs from the output directory and write `<output-dir>/report.md`:
 
 ```
-# Discussion Analysis Summary
+# Discussion Analysis Report
 
 ## Source
 <input filename>
@@ -53,12 +54,11 @@ Read the outputs from the output directory and write `<output-dir>/summary.md`:
 <list>
 
 ## Output Files
-- positions.md — position analysis
-- tactics.md — tactics analysis
-- <list any audit files, or "No violations found." if none>
-
-## Key Findings
-<3-5 bullet points highlighting the most significant findings>
+- parsed.md
+- summary.md
+- positions.md
+- tactics.md
+- <list any audit-<name>.md files, or "No violations found." if none>
 ```
 
 ## Important
@@ -67,4 +67,4 @@ Read the outputs from the output directory and write `<output-dir>/summary.md`:
 - Do not skip the parser step — analysis agents depend on `parsed.md`
 - Run Step 2 agents in parallel for efficiency; run audit-splitter sequentially after Step 2
 - Do not editorialize — the summary reflects what the agents found
-- All output files including `summary.md` must be written in English
+- All output files including `report.md` must be written in English

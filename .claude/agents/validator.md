@@ -52,4 +52,4 @@ File: <filename>
 Reason: Unsupported file type — detected <detected type>.
 Recommendation: Convert the file to .txt or .md and retry.
 ```
-Then explicitly state in your response: `PIPELINE_STOP` so the synthesizer knows to halt.
+Then explicitly state in your response: `PIPELINE_STOP` so the calling agent knows to halt.

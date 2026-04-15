@@ -40,6 +40,8 @@ Write your entire output in English. Quotes from participants must be preserved 
    - **Other discrimination** — similar patterns targeting religion, nationality, or sexual orientation
 
    **Rhetorical Abuses**
+   - **Labeling** — dismissing a person or their argument by attaching a demeaning label instead of engaging with the substance (e.g. "you're just a conspiracy theorist", "typical feminist")
+   - **Overgeneralization** — drawing a sweeping conclusion from a single case or limited evidence (e.g. "all politicians are corrupt", "this always happens")
    - **Whataboutism** — deflecting criticism by pointing to unrelated wrongdoing elsewhere
    - **Appeal to nature** — arguing something is good/bad simply because it's natural/unnatural
    - **False equivalence** — treating two fundamentally unequal things as comparable to mislead
