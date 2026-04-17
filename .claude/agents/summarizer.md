@@ -1,7 +1,7 @@
 ---
 name: summarizer
 description: Writes a brief summary of the discussion topic, direction, character, and general idea to summary.md.
-model: claude-sonnet-4-6
+model: claude-haiku-4-5-20251001
 tools: ["Read", "Write"]
 ---
 

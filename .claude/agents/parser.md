@@ -1,7 +1,7 @@
 ---
 name: parser
 description: Reads a discussion transcript from a provided file, identifies all participants, and segments the conversation by speaker. Writes parsed.md to the provided output directory. Run this first before any analysis agents.
-model: claude-sonnet-4-6
+model: claude-haiku-4-5-20251001
 tools: ["Read", "Write"]
 ---
 

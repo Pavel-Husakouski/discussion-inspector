@@ -1,6 +1,6 @@
 # Discussion Analysis Agent Team
 
-**v0.6.0** · [Changelog](CHANGELOG.md)
+**v0.7.0** · [Changelog](CHANGELOG.md)
 
 Analyzes discussion transcripts using a team of AI agents. Produces participant positions, tactics assessment, and violation audit — in the discussion's own language.
 

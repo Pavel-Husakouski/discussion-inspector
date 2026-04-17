@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 Format based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.7.0] — 2026-04-17
+
+### Changed
+- Parser and summarizer agents now use `claude-haiku-4-5-20251001` model
+
 ## [0.6.0] — 2026-04-15
 
 ### Added
